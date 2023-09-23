@@ -124,7 +124,10 @@ input::placeholder {
     color: rgb(177, 92, 177);
     font-weight: 545;
 }
-
+input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
 
 /*estilo do button*/
 
