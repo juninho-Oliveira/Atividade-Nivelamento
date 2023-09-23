@@ -1,15 +1,16 @@
  function clicar () {
 
     let nome = document.querySelector(".nome").value;
-    //Esse IF serve para só chamar o alert se o nome for preenchido (a variável nome tiver valor
-    if (nome) {
-      alert(`Obrigado ${nome},  vamos entra em contato!`);
+    let email = document.querySelector(".email").value;
+    let mensagem = document.querySelector(".mensagem").value;
+    //Esse IF serve para só chamar o alert se não for todos os dados preenchidos (a variável nome, email, mensagem tiver valor )
+    if (nome === "" || email === "" || mensagem === "") {
+      alert("Por favor preencha todos os campos!")
     } else {
-        alert("Por favor informe o nome!")
+        alert(`Obrigado ${nome},  vamos entra em contato!`);
     }
      
     history.go (0);//Método history.go (0): Este método carrega uma URL do histórico do navegador dependendo do parâmetro passado a ele.
-   
 
 }
 
