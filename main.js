@@ -1,4 +1,4 @@
- function clicar () {
+ function clicar() {
 
     let nomes = document.querySelector(".nome").value;
     let email = document.querySelector(".email").value;
@@ -7,7 +7,7 @@
     if (nomes === "" || email === "" || mensagem === "") {
       alert("Por favor preencha todos os campos!")
     } else {
-        alert(`Obrigado ${nome},  vamos entra em contato!`);
+      alert(`Obrigado, ${nomes}, entraremos em contato com você!`)
     }
     history.go (0);//Método history.go (0): Este método carrega uma URL do histórico do navegador dependendo do parâmetro passado a ele.
 }
